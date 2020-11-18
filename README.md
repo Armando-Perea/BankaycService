@@ -4,7 +4,7 @@
 
 By Engr. Armando Perea Sanchez.
 
-(https://nodesource.com/products/nsolid)[![Build Status](https://rgprincipal.com/es/wp-content/uploads/2018/12/Logo-de-Java-portada-250x122.jpg)](https://travis-ci.org/joemccann/dillinger)
+[![N|Solid]](https://nodesource.com/products/nsolid)[![Build Status](https://rgprincipal.com/es/wp-content/uploads/2018/12/Logo-de-Java-portada-250x122.jpg)]
 
 # Development Project Comments
 
