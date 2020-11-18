@@ -4,7 +4,7 @@
 
 By Engr. Armando Perea Sanchez.
 
-[![N|Solid](https://i1.wp.com/sfnewtech.com/wp-content/uploads/directory/logo-nearsoft2.jpg)](https://nodesource.com/products/nsolid)[![Build Status](https://rgprincipal.com/es/wp-content/uploads/2018/12/Logo-de-Java-portada-250x122.jpg)](https://travis-ci.org/joemccann/dillinger)
+(https://nodesource.com/products/nsolid)[![Build Status](https://rgprincipal.com/es/wp-content/uploads/2018/12/Logo-de-Java-portada-250x122.jpg)](https://travis-ci.org/joemccann/dillinger)
 
 # Development Project Comments
 
