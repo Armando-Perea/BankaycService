@@ -4,7 +4,7 @@
 
 By Engr. Armando Perea Sanchez.
 
-[![N|Solid](https://i1.wp.com/sfnewtech.com/wp-content/uploads/directory/logo-nearsoft2.jpg)](https://nodesource.com/products/nsolid)[![Build Status](https://rgprincipal.com/es/wp-content/uploads/2018/12/Logo-de-Java-portada-250x122.jpg)](https://travis-ci.org/joemccann/dillinger)
+![Build Status](https://rgprincipal.com/es/wp-content/uploads/2018/12/Logo-de-Java-portada-250x122.jpg)
 
 # Development Project Comments
 
@@ -22,72 +22,79 @@ By Engr. Armando Perea Sanchez.
  
 # Endpoints to process
 
-## createUrl
-POST EXAMPLE: http://localhost:8080/nearsoft/system/url-generator/createUrl
-JSON BODY: 
-{
-    "url": "www.yahoo.com"
-}
+## getAbilities
+GET EXAMPLE: http://localhost:3001/pokeapi/getAbilities/ditto
 
-{
-    "url": "www.google.com"
-}
-*** Observation Here, in the Requeirements was not specified to avoid any special character for url different from google or Yahoo, so, there are defects when using getOperationsByEngine if the URL contains any % (Special Character)
-{
-    "url": "www.oc34n5Deep458uiodkj.com"
-}
+RESPONSE:
 
-## getUrlByAlias
-
-GET EXAMPLE FOR GOOGLE : http://localhost:8080/nearsoft/system/url-generator/getUrlByAlias/dNtQc
-{
-    "url": "www.google.com"
-}
-
-GET EXAMPLE FOR YAHOO : http://localhost:8080/nearsoft/system/url-generator/getUrlByAlias/25HArvF
-{
-    "url": "www.yahoo.com"
-}
-
-GET EXAMPLE FOR OTHERS : http://localhost:8080/nearsoft/system/url-generator/getUrlByAlias/wwwcnsSXcm
-{
-    "url": "www.oc34ns56ASX78#.com"
-}
-
-## getAllUrl
-
-GET EXAMPLE: http://localhost:8080/nearsoft/system/url-generator/getAllUrl
-JSON RESPONSE: 
-{
-    "urlContent": {
-        "www.yahoo.com": "25HArvF",
-        "www.oc34ns56ASX78.com": "wwwcnsSXcm",
-        "www.google.com": "dNtQc"
+[
+    {
+        "ability": {
+            "name": "limber",
+            "url": "https://pokeapi.co/api/v2/ability/7/"
+        },
+        "is_hidden": false,
+        "slot": 1
     }
-}
+ ]
 
-## deleteUrlByEngine
+## id
 
-DELETE EXAMPLE: http://localhost:8080/nearsoft/system/url-generator/deleteUrlByEngine/www.oc34ns56ASX78.com
+GET EXAMPLE : http://localhost:3001/pokeapi/id/ditto
+
 RESPONSE:
-URL WAS REMOVED SUCCESSFULY 
 
-** Important, since there are no validations for urls special characters content, if the url was: www.oc34ns56AS%X78#.com
-The response would be:
-URL IS NOT ON THE LIST
-Since the REST operation struggles with % # or any special character that affects it.
+132
 
-## clearUrls
+## getBaseExperience
 
-DELETE EXAMPLE: http://localhost:8080/nearsoft/system/url-generator/clearUrls
+GET EXAMPLE : http://localhost:3001/pokeapi/id/ditto
+
 RESPONSE:
-URL WAS REMOVED SUCCESSFULY
 
-## deleteUrlByAlias
+101
 
-DELETE EXAMPLE: http://localhost:8080/nearsoft/system/url-generator/deleteUrlByAlias/wwwcnsSXcm
+## getHeldItems
+
+GET EXAMPLE : http://localhost:3001/pokeapi/getHeldItems/ditto
+
 RESPONSE:
-URL CONTENT WAS CLEARED SUCCESSFULY
+
+[
+    {
+        "item": {
+            "name": "metal-powder",
+            "url": "https://pokeapi.co/api/v2/item/234/"
+        },
+        "version_details": [
+            {
+                "rarity": 5,
+                "version": {
+                    "name": "ruby",
+                    "url": "https://pokeapi.co/api/v2/version/7/"
+                }
+            }, ...................................................
 
 
-Please let me know if my development was accordingly and If there was a way to do it better, I would Appreciate it, no matter if I don't full fill your expectations, I'm always learning new things. Thanks for the opportunity!
+## getName
+
+GET EXAMPLE : http://localhost:3001/pokeapi/getName/ditto
+
+RESPONSE:
+
+ditto
+
+
+## getLocationAreaEncounters
+
+GET EXAMPLE : http://localhost:3001/pokeapi/getLocationAreaEncounters/ditto
+
+RESPONSE:
+
+https://pokeapi.co/api/v2/pokemon/132/encounters
+
+## Please!
+
+Please let me know if my development was accordingly and If there was a way to do it better, 
+I would Appreciate it, no matter if I don't full fill your expectations, 
+I'm always learning new things. Thanks for the opportunity!
