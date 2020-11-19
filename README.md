@@ -98,3 +98,4 @@ https://pokeapi.co/api/v2/pokemon/132/encounters
 Please let me know if my development was accordingly and If there was a way to do it better, 
 I would Appreciate it, no matter if I don't full fill your expectations, 
 I'm always learning new things. Thanks for the opportunity!
+
